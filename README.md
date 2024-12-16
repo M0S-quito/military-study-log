@@ -1,7 +1,10 @@
 # military-study-log
 나도... 군대를 가는구나...
+![image](https://github.com/user-attachments/assets/555dd86f-b764-4e6a-9b1d-8cf3ca54ad2f)
+
 ### 그래도 공부와 개발은 멈출 수 없지!!!
 일단 공부와 실습내용을 여기다가 저장 하고 차차 블로그로 정리해서 올리려고 합니다.
+
 --- 
 ### 파일 구조
 ```perl
