@@ -1,1 +1,11 @@
-test...
+algorithms/
+├── data_structures/    # 자료구조
+├── search/             # 탐색 알고리즘
+├── sorting/            # 정렬 알고리즘
+├── dp/                 # 동적 계획법
+├── greedy/             # 그리디 알고리즘
+├── math/               # 수학 관련
+├── string/             # 문자열 알고리즘
+├── graph/              # 그래프 알고리즘
+└── misc/               # 기타 잡다한 문제
+
