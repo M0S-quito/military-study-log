@@ -3,18 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>공부 정리</title>
+  <title>python_note</title>
   <style>
-    body {
+    body{
       font-family: sans-serif;
       margin: 0;
       padding: 0;
+      background-color: rgb(45,45,45);
     }
     nav {
-      background: #eee;
+      position: fixed;
+      width: 100%;
+      background: rgb(53,114,165);
       padding: 10px;
       display: flex;
       gap: 10px;
+    }
+    nav button{
+        background-color:rgb(252,211,77);
     }
     section {
       display: none;
@@ -23,6 +29,30 @@
     section.active {
       display: block;
     }
+    #block_section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap:20px;
+    }
+    #block_card{
+        width: 370px;
+        height: 370px;
+        border: 3px solid black;
+        border-radius: 10px;
+
+        background-color: rgb(200,205,210);
+    }
+    footer{
+        position: fixed;
+        padding: 10px;
+        background-color: rgb(53,114,165);
+        bottom: 0;
+        width: 100%;
+    }
+    footer button{
+        background-color: rgb(102,217,182);
+    }
   </style>
 </head>
 <body>
@@ -30,22 +60,140 @@
     <button onclick="showPage('home')">홈</button>
     <button onclick="showPage('topic1')">주제 1</button>
     <button onclick="showPage('topic2')">주제 2</button>
+    <button onclick="showPage('topic3')">주제 3</button>
+    <button onclick="showPage('topic4')">주제 4</button>
+    <button onclick="showPage('topic5')">주제 5</button>
   </nav>
 
   <section id="home" class="active">
+    <div style="width:100%; height:40px"></div>    
     <h1>공부 정리 앱</h1>
     <p>이 앱은 내가 공부한 내용을 정리해 놓은 싱글 페이지 앱이다.</p>
+    <div style="width:100%; height:40px"></div> 
   </section>
 
   <section id="topic1">
-    <h2>주제 1</h2>
-    <p>여기에 첫 번째 공부 내용을 입력하세요.</p>
+    <div style="width:100%; height:40px"></div>
+    <div id="block_section">
+        <div id="block_card">
+            <p>block_card1</p>
+        </div>
+
+        <div id="block_card">
+            <p>block_card</p>
+        </div>
+
+        <div id="block_card">
+            <p>block_card</p>
+        </div>
+
+        <div id="block_card">
+            <p>block_card</p>
+        </div>
+    </div>
+    <div style="width:100%; height:40px"></div>
   </section>
 
+
   <section id="topic2">
-    <h2>주제 2</h2>
-    <p>여기에 두 번째 공부 내용을 입력하세요.</p>
+    <div style="width:100%; height:40px"></div>
+    <div id="block_section">
+        <div id="block_card">
+            <p>block_card2</p>
+        </div>
+
+        <div id="block_card">
+            <p>block_card</p>
+        </div>
+
+        <div id="block_card">
+            <p>block_card</p>
+        </div>
+
+        <div id="block_card">
+            <p>block_card</p>
+        </div>
+    </div>
+    <div style="width:100%; height:40px"></div>
   </section>
+
+
+  <section id="topic3">
+    <div style="width:100%; height:40px"></div>
+     <div id="block_section">
+        <div id="block_card">
+            <p>block_card3</p>
+        </div>
+
+        <div id="block_card">
+            <p>block_card</p>
+        </div>
+
+        <div id="block_card">
+            <p>block_card</p>
+        </div>
+
+        <div id="block_card">
+            <p>block_card</p>
+        </div>
+    </div>
+    <div style="width:100%; height:40px"></div>
+  </section>
+
+  <section id="topic4">
+    <div style="width:100%; height:40px"></div>
+     <div id="block_section">
+        <div id="block_card">
+            <p>block_card4</p>
+        </div>
+
+        <div id="block_card">
+            <p>block_card</p>
+        </div>
+
+        <div id="block_card">
+            <p>block_card</p>
+        </div>
+
+        <div id="block_card">
+            <p>block_card</p>
+        </div>
+    </div>
+    <div style="width:100%; height:40px"></div>
+  </section>
+
+  <section id="topic5">
+    <div style="width:100%; height:40px"></div>
+     <div id="block_section">
+        <div id="block_card">
+            <p>block_card5</p>
+        </div>
+
+        <div id="block_card">
+            <p>block_card</p>
+        </div>
+
+        <div id="block_card">
+            <p>block_card</p>
+        </div>
+
+        <div id="block_card">
+            <p>block_card</p>
+        </div>
+    </div>
+    <div style="width:100%; height:40px"></div>
+ </section>
+
+  <section id="interpreter">
+    <div style="width:100%; height:40px"></div>
+    <h2>interpreter</h2>
+    <p>inter</p>
+    <div style="width:100%; height:40px"></div>
+  </section>
+    
+  <footer>
+    <button id='inter_btn' onclick="showPage('interpreter')">interpreter</button>
+  </footer>
 
   <script>
     function showPage(id) {

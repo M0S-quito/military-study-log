@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>공부 정리</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    nav {
+      background: #eee;
+      padding: 10px;
+      display: flex;
+      gap: 10px;
+    }
+    section {
+      display: none;
+      padding: 20px;
+    }
+    section.active {
+      display: block;
+      border: 3px solid black;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <button onclick="showPage('home')">홈</button>
+    <button onclick="showPage('topic1')">주제 1</button>
+    <button onclick="showPage('topic2')">주제 2</button>
+    <button onclick="showPage('topic3')">주제 3</button>
+    <button onclick="showPage('topic4')">주제 4</button>
+    <button onclick="showPage('topic5')">주제 5</button>
+  </nav>
+
+  <section id="home" class="active">
+    <h1>공부 정리 앱</h1>
+    <p>이 앱은 내가 공부한 내용을 정리해 놓은 싱글 페이지 앱이다.</p>
+  </section>
+
+  <section id="topic1">
+    <h2>주제 1</h2>
+    <p>여기에 첫 번째 공부 내용을 입력하세요.</p>
+  </section>
+
+  <section id="topic2">
+    <h2>주제 2</h2>
+    <p>여기에 두 번째 공부 내용을 입력하세요.</p>
+  </section>
+
+  <section id="topic3">
+    <h2>주제 3</h2>
+    <p>여기에 두 번째 공부 내용을 입력하세요.</p>
+  </section>
+
+  <section id="topic4">
+    <h2>주제 4</h2>
+    <p>여기에 두 번째 공부 내용을 입력하세요.</p>
+  </section>
+
+  <section id="topic5">
+    <h2>주제 5</h2>
+    <p>여기에 두 번째 공부 내용을 입력하세요.</p>
+  </section>
+
+  <script>
+    function showPage(id) {
+      document.querySelectorAll("section").forEach(sec => {
+        sec.classList.remove("active");
+      });
+      document.getElementById(id).classList.add("active");
+    }
+  </script>
+</body>
+</html>
